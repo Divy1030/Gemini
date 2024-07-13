@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="website icon" type="png" href="logo.png">
+</head>
+<body>
+    <div class="container">
+        <div class="sidenav">
+            <div class="topbar">
+                <i class='bx bx-menu' id="tbtn" ></i>
+            </div>
+            <div class="sidenavbutton">
+                <button><i class='bx bx-plus' ></i><span class="colltext">NEW CHAT</span></button>
+            </div>
+            <div class="history">
+                <h5>RECENT</h5>
+                <ul>
+                    <li><i class='bx bx-message'></i>How are youHow are youHow are youHow are youHow are you</li>
+                    <li><i class='bx bx-message'></i>How are you</li>
+                    <li><i class='bx bx-message'></i>How are you</li>
+                    <li><i class='bx bx-message'></i>How are you</li>
+                    <li><i class='bx bx-chevron-down' ></i>Show more</li>
+                </ul>
+            </div>
+            <div class="actionlist">
+                <button class="transparentbutton"><i class='bx bx-help-circle' ></i><span class="colltext">HELP</span></button>
+                <button class="transparentbutton"><i class='bx bx-history' ></i><span class="colltext">ACTIVITY</span></button>
+                <button class="transparentbutton"><i class='bx bxs-cog' ></i><span class="colltext">SETTINGS</span></button>
+            </div>
+        </div>
+        <div class="chatwindow">
+            <div class="startcontent">
+                <div class="upper">
+                <h1><span class="hello">
+                    Hello,Divy
+                </span>
+                <br>
+            <span class="question">HOW CAN I HELP YOU TODAY?</span></h1>
+                <br>
+                <div class="list">
+                <ul><li>HOW TO BE A FULL 
+                    STACK DEVELOPER</li></ul>
+                <ul><li>HOW TO BE A 
+                    FRONT END DEVELOPER</li></ul>
+                <ul><li>Help me pick a movie to watch
+                     based on a genre </li></ul>
+                    <ul><li>Generate unit tests for the following
+                         C# function</li></ul>
+            </div>
+            </div>
+                <div id="result">
+                </div>
+            </div>
+                <div class="chatcontent">
+                  
+                </div>
+                <div class="inputarea" >
+                    <form id="promptForm">
+                    <input type="text" id="promptInput" placeholder="Enter your prompt">
+                </form>
+                <div class="icon">
+                    <i class='bx bx-image-add' ></i>
+                    <i class='bx bx-microphone' ></i>
+                    <i class='bx bxs-chevrons-right' id="response"></i>
+                </div>
+            </div>
+                <p class="privacy">
+                    Gemini may display inaccurate info, including about people, so double-check its responses. Your privacy and Gemini Apps
+                </p>
+        </div>
+    </div>
+    <script src="gemini.js" type="module"></script>
+</body>
+</html>
